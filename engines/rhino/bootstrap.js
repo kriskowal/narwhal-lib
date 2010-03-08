@@ -13,13 +13,13 @@
     /* this gets used for several fixtures */
     var context = Packages.org.mozilla.javascript.Context.getCurrentContext();
 
-    // TODO: enable this via a command line switch
-    context.setOptimizationLevel(-1);
-    
-    
+    var setOptimizationLevel = function (n) {
+        context.setOptimizationLevel(Number(n));
+    };
+
     context.setLanguageVersion(180);
     context.getWrapFactory().setJavaPrimitiveWrap(false);
-    
+
     var prefix = "";
     if (typeof NARWHAL_HOME != "undefined") {
         prefix = NARWHAL_HOME;
@@ -108,7 +108,9 @@
                 prefix: prefix,
                 evaluate: evaluate,
                 debug: debug,
-                verbose: verbose
+                verbose: verbose,
+                setOptimizationLevel: setOptimizationLevel,
+                supportsTusk: true
             },
             file: {
                 read: read,
@@ -123,7 +125,7 @@
         print(e);
         Packages.java.lang.System.exit(1);
     }
-        
+
 })(this, function () {
     return eval(arguments[0]);
 });
