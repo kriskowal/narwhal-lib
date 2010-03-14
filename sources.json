@@ -13,6 +13,10 @@
             "type": "github",
             "user": "tlrobinson"
         },
+        "narwhal-v8cgi": {
+            "type": "github",
+            "user": "veged"
+        },
         "narwhal-johnson": {
             "type": "github",
             "user": "tlrobinson"
@@ -312,6 +316,10 @@
             "user": "gmosx",
             "name": "normal-template"
         },
+        "reform": {
+            "type": "github",
+            "user": "fitzgen"
+        },
         "jdbc": {
             "type": "github",
             "user": "tlrobinson",
@@ -326,6 +334,10 @@
             "type": "github",
             "user": "tlrobinson",
             "name": "commonjs-sqlite-jdbc"
+        },
+        "zipjs": {
+            "type": "github",
+            "user": "tlrobinson"
         }
     }
 }
