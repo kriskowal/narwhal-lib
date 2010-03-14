@@ -1,7 +1,7 @@
 
 // Kris Zyp
 
-var queue = require("event-queue");
+var queue = require("event-loop");
 var workerEngine = require("worker-engine");
 
 var Worker = exports.Worker = function(scriptName){
@@ -67,13 +67,13 @@ function createWorker(scriptName, setup, workerName){
             system: workerGlobal.system,
             loader: workerGlobal.require.loader,
             modules: {
-                "event-queue": workerGlobal.require("event-queue"),
+                "event-loop": workerGlobal.require("event-loop"),
                 packages: workerGlobal.require("packages")
             },
             debug: workerGlobal.require.loader.debug
         });
     // get the event queue
-    workerQueue = sandbox("event-queue"); 
+    workerQueue = sandbox("event-loop"); 
     
     sandbox("worker").name = workerName;
     

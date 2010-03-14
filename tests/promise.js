@@ -1,7 +1,7 @@
 
 var assert = require("assert");
 var UTIL = require("util");
-var queue = require("event-queue");
+var queue = require("event-loop-engine");
 var promiseModule = require("promise");
 
 exports["test NodeJS API"] = function () {

@@ -1,6 +1,6 @@
 
 // TODO consolidate API here.
-var QE = require("./event-queue");
+var QE = require("./event-loop");
 for (var name in QE) {
     exports[name] = QE[name];
 }

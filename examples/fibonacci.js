@@ -16,4 +16,4 @@ worker.onerror = function(error) {
 worker.postMessage(5);
 
 // event loop
-while(true) require("event-queue").nextEvent()();
+while(true) require("event-loop-engine").nextEvent()();
