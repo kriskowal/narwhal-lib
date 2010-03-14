@@ -5,16 +5,17 @@ Narwhal Library
 A collection of pure CommonJS JavaScript modules.
 
 * CommonJS module loading (`sandbox`, `loader`, `loader/*`)
-* CommonJS assertions and unit testing (`assert`, `test)
+* CommonJS assertions and unit testing (`assert`, `test`)
 * package loading, constructs a `require.paths` (`packages`)
-* utilities, common Object, Array, and String operators, higher order functions (`util`)
+* utilities, common Object, Array, and String operators, higher order functions
+  (`util`)
 * radix transcoding (`base16`, `base64`)
 * unicode transcoding (`utf8`)
-* hashing (crc32, md4, md5, sha, sha256)
+* hashing (`crc32`, `md4`, `md5`, `sha`, `sha256`)
 * command line options and arguments parsing (`args`)
 * UUID generation (`uuid`)
 * VT100 terminal control and colorized streaming (`term`)
-* HTML escaping and stripping
+* HTML escaping and stripping (`html`)
 * logging (`logger`)
 * MIME parsing and content negotiation (`mime`)
 * Promises and remote reference manipulation (`ref-send`, `promise`)
