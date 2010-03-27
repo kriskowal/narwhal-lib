@@ -4,21 +4,21 @@ Narwhal Library
 
 A collection of pure CommonJS JavaScript modules.
 
-* CommonJS module loading (`sandbox`, `loader`, `loader/*`)
 * CommonJS assertions and unit testing (`assert`, `test`)
-* package loading, constructs a `require.paths` (`packages`)
-* utilities, common Object, Array, and String operators, higher order functions
-  (`util`)
-* radix transcoding (`base16`, `base64`)
-* unicode transcoding (`utf8`)
-* hashing (`crc32`, `md4`, `md5`, `sha`, `sha256`)
-* command line options and arguments parsing (`args`)
+* Radix transcoding (`base16`, `base64`)
+* Hashing (`crc32`, `md4`, `md5`, `sha`, `sha256`)
+* Unicode transcoding (`utf8`)
 * UUID generation (`uuid`)
-* VT100 terminal control and colorized streaming (`term`)
-* HTML escaping and stripping (`html`)
-* logging (`logger`)
+* Logging (`logger`)
 * MIME parsing and content negotiation (`mime`)
-* Promises and remote reference manipulation (`ref-send`, `promise`)
+* HTML escaping and stripping (`html`)
+* Utilities, common `Object`, `Array`, and `String` operators, higher order
+  functions (`narwhal/util`)
+* Command line options and arguments parsing (`narwhal/args`)
+* VT100 terminal control and colorized streaming (`narwhal/term`)
+* CommonJS module loading (`narwhal/sandbox`, `narwhal/loader*`)
+* Package loading, constructs a `require.paths` (`narwhal/packages`)
+* Promises and remote reference manipulation (`narwhal/promise`)
 
 `narwhal-lib` is a package subtree of
 [`narwhal`](http://github.com/280north/narwhal), which additionally provides
