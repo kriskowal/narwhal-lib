@@ -24,12 +24,7 @@
     ],
     "lean": {
         "include" : [
-            "engines/default/**/*",
-            "engines/rhino/bootstrap.js",
-            "engines/rhino/lib/**/*",
-            "engines/rhino/package.json",
             "lib/**/*",
-            "narwhal.js",
             "package.json"
         ]
     }
