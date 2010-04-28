@@ -1,6 +1,6 @@
 {
     "name": "narwhal-lib",
-    "version": "0.2.2",
+    "version": "0.2.2experimental",
     "description": "A general purpose JavaScript platform",
     "keywords": ["javascript", "engine", "platform"],
     "author": "Tom Robinson (http://tlrobinson.net/) <tom@280north.com>",
