@@ -1,6 +1,6 @@
 {
     "name": "narwhal-lib",
-    "version": "0.2.2",
+    "version": "0.0.0",
     "description": "A general purpose JavaScript platform",
     "keywords": ["javascript", "engine", "platform"],
     "author": "Tom Robinson (http://tlrobinson.net/) <tom@280north.com>",
@@ -22,10 +22,16 @@
         "Nathan Stott (http://nathan.whiteboard-it.com) <nathan.stott@whiteboard-it.com>",
         "Toby Ho (http://tobyho.com) <airportyh@gmail.com>"
     ],
+    "engines": ["node"],
     "lean": {
         "include" : [
             "lib/**/*",
             "package.json"
         ]
+    },
+    "narwhal": {
+        "engines": {
+            "node": "0.1.92"
+        }
     }
 }

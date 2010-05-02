@@ -1,0 +1,6 @@
+
+0.2.3
+
+* `narwhal/promise-util`
+** Renamed `group` to `all`
+** Added `deep` for a promise for a fully resolved object tree
