@@ -1,44 +1,42 @@
 {
     "name": "narwhal-lib",
-    "version": "0.0.0",
-    "description": "A general purpose JavaScript platform",
+    "version": "0.0.2",
+    "description": "A general purpose JavaScript library",
     "keywords": ["javascript", "engine", "platform"],
-    "author": "Tom Robinson (http://tlrobinson.net/) <tom@280north.com>",
     "contributors": [
-        "Tom Robinson (http://tlrobinson.net/) <tom@280north.com>",
-        "Kris Kowal (http://askawizard.blogspot.com/) <kris.kowal@cixar.com>",
-        "George Moschovitis (http://blog.gmosx.com/)",
-        "Kevin Dangoor (http://www.blueskyonmars.com/)",
-        "Hannes Wallnöfer",
-        "Sébastien Pierre",
-        "Irakli Gozalishvili (http://rfobic.wordpress.com/)",
-        "Christoph Dorn (http://www.christophdorn.com/)",
-        "Zach Carter",
-        "Nathan L. Smith",
-        "Jan Varwig",
-        "Mark Porter",
-        "Isaac Z. Schlueter (http://blog.izs.me/) <i@izs.me>",
-        "Kris Zyp (http://www.sitepen.com/blog/author/kzyp/)",
-        "Nathan Stott (http://nathan.whiteboard-it.com) <nathan.stott@whiteboard-it.com>",
-        "Toby Ho (http://tobyho.com) <airportyh@gmail.com>"
+        {"name": "Tom Robinson", "web": "http://tlrobinson.net/", "email": "tom@280north.com"},
+        {"name": "Kris Kowal", "web": "http://askawizard.blogspot.com/", "email": "kris@cixar.com"},
+        {"name": "George Moschovitis", "web": "http://blog.gmosx.com"},
+        {"name": "Kevin Dangoor", "web": "http://www.blueskyonmars.com"},
+        {"name": "Hannes Wallnöfer"},
+        {"name": "Sébastien Pierre"},
+        {"name": "Irakli Gozalishvili", "web": "http://rfobic.wordpress.com/"},
+        {"name": "Christoph Dorn", "web": http://www.christophdorn.com/"},
+        {"name": "Zach Carter"},
+        {"name": "Nathan L. Smith"},
+        {"name": "Jan Varwig"},
+        {"name": "Mark Porter"},
+        {"name": "Isaac Z. Schlueter", "web": "http://blog.izs.me/", "email": "i@izs.me"},
+        {"name": "Kris Zyp", "web": "http://www.sitepen.com/blog/author/kzyp/"},
+        {"name": "Nathan Stott", "web": "http://nathan.whiteboard-it.com", "email": "nathan.stott@whiteboard-it.com"},
+        {"name": "Toby Ho", "web": "http://tobyho.com", "email": "airportyh@gmail.com"}
     ],
-    "engines": ["node"],
-    "lean": {
-        "include" : [
-            "lib/**/*",
-            "package.json"
-        ]
-    },
     "narwhal": {
-        "engines": {
-            "node": "0.1.92"
+        "lean": {
+            "include" : [
+                "lib/**/*",
+                "package.json"
+            ]
         }
     },
     "overlay": {
         "npm": {
             "engines": {
-                "node": ">=0.1.92"
+                "node": ">=0.1.95"
+            },
+            "dependencies": {
+                "narwhal-node": ">=0.0.2"
             }
         }
-    }       
+    }
 }
